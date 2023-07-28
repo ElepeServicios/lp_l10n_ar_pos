@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+       <record model="ir.ui.view" id="pos_config_l10n_ar_settings">
+            <field name="name">pos.config.l10n.ar.settings</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="point_of_sale.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@id='pos_accounting_section']" position="after">
+                    <div class="row mt16 o_settings_container" id="pos_l10n_ar_section">
+                        <div class="col-12 col-lg-6 o_setting_box">
+                            <div class="o_setting_right_pane">
+                                <div class="row">
+                                    <label string="Auto Invoice" for="pos_auto_invoice_check" class="col-lg-4 o_light_label"/>
+                                    <field name="pos_auto_invoice_check"/>
+                                </div>
+                                <div class="row">
+                                    <label string="Show Invoice Number on Receipt" for="pos_show_invoice_number" class="col-lg-4 o_light_label"/>
+                                    <field name="pos_show_invoice_number"/>
+                                </div>
+                                <div class="row">
+                                    <label string="Show Customer VAT on Receipt" for="pos_show_customer_vat" class="col-lg-4 o_light_label"/>
+                                    <field name="pos_show_customer_vat"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6 o_setting_box" title="Default Customer in POS Order.">
+                            <div class="o_setting_right_pane">
+                                <label for="pos_default_partner_id"/>
+                                <div class="text-muted">
+                                    Default Customer.
+                                </div>
+                                <div class="content-group mt16">
+                                    <field name="pos_default_partner_id" colspan="4" nolabel="1"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>
