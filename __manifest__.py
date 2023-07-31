@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'ELEPE AR POS',
+    'name': 'AR POS',
     'version': '1.0',
     'author': 'elepe servicios SRL',
     'license': 'OPL-1',
