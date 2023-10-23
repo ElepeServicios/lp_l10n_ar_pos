@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'AR POS',
-    'version': '1.0',
+    'version': '1.0.1',
     'author': 'elepe servicios SRL',
     'license': 'OPL-1',
     'category': 'Point Of Sale',
